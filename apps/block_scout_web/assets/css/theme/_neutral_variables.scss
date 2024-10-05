@@ -10,7 +10,7 @@ $navbar-logo-height: 30px;
 // footer
 $footer-background-color: #2684fe;
 $footer-title-color: #fff;
-$footer-text-color: #bda6e7;
+$footer-text-color: #fff;
 $footer-item-disc-color: $secondary;
 .footer-logo { filter: brightness(0) invert(1); }
 
@@ -28,13 +28,13 @@ $dashboard-banner-gradient-start: $primary; // gradient begin
 
 $dashboard-banner-gradient-end: lighten($primary, 5); // gradient end
 
-$dashboard-banner-network-plain-container-background-color: #529dff; // stats bg
+$dashboard-banner-network-plain-container-background-color: #2172db; // stats bg
 
 
 // navigation
 .navbar { box-shadow: 0px 0px 30px 0px rgba(21, 53, 80, 0.12); } // header shadow
 $dropdown-menu-item-hover-color: $primary !default;
-$dropdown-menu-item-hover-background: rgba($primary, .1) !default;
+$dropdown-menu-item-hover-background: rgba($primary, 1) !default;
 $header-icon-color-hover: $primary;
 $header-icon-border-color-hover: $primary;
 

@@ -9,13 +9,9 @@ defmodule BlockScoutWeb.LayoutView do
 
   @default_other_networks [
     %{
-      title: "testnet",
-      url: "http://http://51.21.3.35:4000/",
+      title: "Testnet",
+      url: "#",
       test_net?: true
-    },
-    %{
-      title: "mainnet",
-      url: "http://http://51.21.3.35:4000/"
     },
   ]
 

@@ -5,10 +5,7 @@
       <div class="col-md-12">
         <%= link to: webapp_url(@conn), class: "footer-brand" do %>
           <%= if logo_footer() do %>
-            <img class="footer-logo" src="<%= static_path(@conn, logo_footer()) %>" alt="<%= subnetwork_title() %>" />
-          <% end %>
-          <%= if logo_text() do %>
-            <span class="logo-text in-footer <%= unless logo_footer(), do: "no-logo" %>"> <%= logo_text() %> </span>
+            <img src="<%= static_path(@conn, logo_footer()) %>" style="width: 418px; height: 50px;" />
           <% end %>
         <% end %>
       </div>
@@ -19,29 +16,20 @@
 
     <div class="row">
       <div class="col-xs-12 col-lg-3">
-        <p class="footer-info-text"><%= gettext("Wadzchain explorer") %></p>
+        <p class="footer-info-text"><%= gettext("WadzChain Explorer") %></p>
         <div class="footer-social-icons">
-          <a href="https://t.me/WadzPay_Official" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Telegram") %>'>
+          <a href="#" rel="noreferrer" class="footer-social-icon" title='<%= gettext("Telegram") %>'>
             <div class="footer-social-icon-container fontawesome-icon telegram"></div>
           </a>
-          <a href="https://www.linkedin.com/company/wadzchain/posts/?feedView=all" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Linkedin") %>'>
+          <a href="#" rel="noreferrer" class="footer-social-icon" title='<%= gettext("Linkedin") %>'>
             <div class="footer-social-icon-container fontawesome-icon linkedin"></div>
           </a>
-          <a href="https://t.me/WadzPay_Official" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Twitter") %>'>
+          <a href="#" rel="noreferrer" class="footer-social-icon" title='<%= gettext("Twitter") %>'>
             <div class="footer-social-icon-container fontawesome-icon twitter"></div>
           </a>
         </div>
       </div>
 
-      <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
-        <h3>Wadzchain</h3>
-        <ul>
-          <li><a href="https://www.wadzchain-network.io/" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Privacy Policy") %></a></li>
-          <li><a href="https://www.wadzchain-network.io/" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Terms and Conditions") %></a></li>
-          <li><a href="https://www.wadzchain-network.io/" rel="noreferrer" class="footer-link"  target="_blank"><%= gettext("Contact") %></a></li>          
-          <%= render BlockScoutWeb.LayoutView, "_add_chain_to_mm.html" %>
-        </ul>
-      </div>
       <% main_nets = main_nets(other_networks()) %>
 
       <%= unless Enum.empty?(main_nets) do %>
