@@ -9,7 +9,7 @@ defmodule BlockScoutWeb.LayoutView do
 
   @default_other_networks [
     %{
-      title: "Testnet",
+      title: " Testnet",
       url: "#",
       test_net?: true
     },
